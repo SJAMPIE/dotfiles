@@ -7,17 +7,17 @@
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-left": ["custom/thunar", "hyprland/workspaces", "hyprland/window"],
   "modules-center": ["mpris"],
   "modules-right": [
     "clock",
     "network",
     "custom/bt",
     "pulseaudio",
-    "tray",
     "custom/notification",
     "battery",
     "custom/power",
+    "tray"
   ],
   "custom/spotify": {
     "format": "  {}",
@@ -135,6 +135,11 @@
 	"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
 	"tooltip-format-ethernet": "{ifname} ",
 	"tooltip-format-disconnected": "Disconnected",
-	"max-length": 50
+	"max-length": 50,
+	"on-click": "kitty -e nmtui"
+},
+"custom/thunar": {
+  "format": "󰍜",
+  "on-click": "thunar"
 }
 }
