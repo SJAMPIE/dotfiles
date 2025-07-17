@@ -140,6 +140,6 @@
 },
 "custom/thunar": {
   "format": "󰍜",
-  "on-click": "thunar"
+  "on-click": "kitty -e yazi"
 }
 }
